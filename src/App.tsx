@@ -15,12 +15,12 @@ function Section1() {
             From Wikipedia, the free encyclopedia
           </a>
         </div>
-        <div className="image">
+        <div data-aos="fade-left" className="image">
           <div className="image-1">
             <img height={300} src={Image.image1} width={300} />
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <p>
             The <b>James Webb Space Telescope (JWST)</b> is a space telescope
             currently conducting infrared astronomy. As the largest optical
@@ -44,21 +44,21 @@ function Section2() {
     <div>
       <div className="wrapper">
         <div className="title-2">
-          <h2>Location and orbit</h2>
+          <h2 data-aos="zoom-out-right">Location and orbit</h2>
         </div>
-        <div>
+        <div data-aos="zoom-out-right">
           <p>
             Webb operates in a halo orbit, circling around a point in space
             known as the Sun–Earth L2 Lagrange point, approximately 1,500,000 km
             (930,000 mi) beyond Earth's orbit around the Sun.
           </p>
         </div>
-        <div className="image-2">
+        <div className="image-2" data-aos="zoom-out-right">
           <div>
             <img height={350} src={Image.image2} width={350} />
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-out-right">
           <p>
             The telescope circles about the Sun–Earth L2 point in a halo orbit,
             which is inclined with respect to the ecliptic, has a radius varying
@@ -78,10 +78,12 @@ function Section2() {
             <tbody>
               <tr>
                 <td colSpan={3}>
-                  <h2>Animation of James Webb Space Telescope trajectory</h2>
+                  <h2 data-aos="zoom-out-right">
+                    Animation of James Webb Space Telescope trajectory
+                  </h2>
                 </td>
               </tr>
-              <tr>
+              <tr data-aos="zoom-out-right">
                 <td>
                   <span>Top view</span>
                 </td>
@@ -92,7 +94,7 @@ function Section2() {
                   <span>Side view from the Sun</span>
                 </td>
               </tr>
-              <tr>
+              <tr data-aos="zoom-out-right">
                 <td>
                   <img height={275} width={275} src={Image.image3} />
                 </td>
@@ -116,8 +118,8 @@ function Section3() {
   return (
     <div>
       <div className="wrapper">
-        <h2>Scientific instruments</h2>
-        <ul>
+        <h2 data-aos="fade-left">Scientific instruments</h2>
+        <ul data-aos="fade-left">
           <li>NIRSpec (Near Infrared Spectrograph) </li>
           <li>
             FGS/NIRISS (Fine Guidance Sensor and Near Infrared Imager and
@@ -127,9 +129,9 @@ function Section3() {
           <li>NIRCam (Near Infrared Camera)</li>
         </ul>
         <div className="padding-10rem" />
-        <div>
+        <div data-aos="fade-left">
           <h2>Partnership</h2>
-          <div>
+          <div data-aos="fade-left">
             <p>
               NASA, ESA and CSA have collaborated on the telescope since 1996. A
               total of 258 companies, government agencies, and academic
@@ -140,7 +142,7 @@ function Section3() {
               Australia, were involved in post-launch operation.
             </p>
             <p>Participating countries:</p>
-            <ul className="partnership">
+            <ul className="partnership" data-aos="fade-left">
               <li>Austria</li>
               <li>Belgium</li>
               <li>Canada</li>
@@ -167,10 +169,10 @@ function Section3() {
         </div>
         <div className="padding-10rem" />
         <div>
-          <h2>See more images of James Web here</h2>
+          <h2 data-aos="fade-left">See more images of James Web here</h2>
           <div>
             <ul>
-              <li>
+              <li data-aos="fade-left">
                 <a
                   href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
                   target="_blank"
@@ -178,7 +180,7 @@ function Section3() {
                   James Webb Space Telescope on Wikipedia
                 </a>
               </li>
-              <li>
+              <li data-aos="fade-left">
                 <a href="https://webbtelescope.org/images" target="_blank">
                   Webb telescope.org
                 </a>
