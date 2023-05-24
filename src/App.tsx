@@ -1,10 +1,11 @@
 import './App.css'
+import './parallax-css/index.css'
 
 import * as Image from './assets/images'
 
 function Section1() {
   return (
-    <div>
+    <div className="parallax parallax-1">
       <div className="wrapper">
         <h1 className="title">James Webb Space Telescope</h1>
         <div className="subtitle">
@@ -41,7 +42,7 @@ function Section1() {
 
 function Section2() {
   return (
-    <div>
+    <div className="parallax parallax-2">
       <div className="wrapper">
         <div className="title-2">
           <h2 data-aos="zoom-out-right">Location and orbit</h2>
@@ -116,7 +117,7 @@ function Section2() {
 
 function Section3() {
   return (
-    <div>
+    <div className="parallax parallax-3">
       <div className="wrapper">
         <h2 data-aos="fade-left">Scientific instruments</h2>
         <ul data-aos="fade-left">

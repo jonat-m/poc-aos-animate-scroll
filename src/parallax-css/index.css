@@ -1,0 +1,55 @@
+:root {
+  --image-1: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Stephan%27s_Quintet_taken_by_James_Webb_Space_Telescope.jpg/801px-Stephan%27s_Quintet_taken_by_James_Webb_Space_Telescope.jpg");
+  --image-2: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/NASA%E2%80%99s_Webb_Reveals_Cosmic_Cliffs%2C_Glittering_Landscape_of_Star_Birth.jpg/640px-NASA%E2%80%99s_Webb_Reveals_Cosmic_Cliffs%2C_Glittering_Landscape_of_Star_Birth.jpg");
+  --image-3: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Webb%27s_First_Deep_Field_%28adjusted%29.jpg/755px-Webb%27s_First_Deep_Field_%28adjusted%29.jpg");
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.parallax:after {
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 60%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 60%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 60%, #000 100%);
+  content: "";
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.parallax-1 {
+  background-color: #3a3a3a;
+  height: 125vh;
+  background-image: var(--image-1)
+}
+
+.parallax-2 {
+  height: 175vh;
+  background-color: #3a3a3a;
+  background-image: var(--image-2)
+}
+
+.parallax-3 {
+  height: 125vh;
+  background-color: #3a3a3a;
+  background-image: var(--image-3)
+}
+
+.parallax>:last-child {
+  padding-bottom: 30vh;
+}
